@@ -20,6 +20,7 @@ export default function Home() {
             className="mx-2 cursor-pointer"
             href="https://www.linkedin.com/in/cody-reed-287511108/"
             target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin className="text-3xl" />
           </a>
@@ -27,6 +28,7 @@ export default function Home() {
             className="cursor-pointer"
             href="https://github.com/CodyJReed"
             target="_blank"
+            rel="noreferrer"
           >
             <FaGithub className="text-3xl" />
           </a>

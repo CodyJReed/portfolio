@@ -19,7 +19,7 @@ export default function Navbar() {
       </label>
       <input
         type="checkbox"
-        class="hidden"
+        className="hidden"
         id="menu-toggle"
         onClick={() => setMenuToggled(!menuToggled)}
       />

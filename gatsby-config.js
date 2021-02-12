@@ -3,7 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   /* Your site config here */
   plugins: [
@@ -21,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `7b5b8b080791a48717031121f2b0c9`,
+        apiToken: process.env.DATO_API,
         preview: false,
         disableLiveReload: false,
       },

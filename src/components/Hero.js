@@ -1,7 +1,7 @@
 import React from "react"
 import "@fontsource/abril-fatface"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 
 const query = graphql`
