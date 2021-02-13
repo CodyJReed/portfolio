@@ -1,12 +1,13 @@
 import React from "react"
 import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <div className="mt-2 mb-48" />
-      {children}
+      <main className="lg:max-w-7xl mx-auto">{children}</main>
+      <Footer />
     </>
   )
 }

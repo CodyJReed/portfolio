@@ -26,7 +26,10 @@ function Hero({ data }) {
     title,
   } = useStaticQuery(query)
   return (
-    <header className="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <header
+      style={{ height: "90vh" }}
+      className="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2"
+    >
       <div className="flex-1 flex justify-around items-center sm:flex-row flex-col-reverse">
         <article className="max-w-lg">
           <h1 style={{ fontFamily: "Abril Fatface" }} className="text-5xl">
@@ -55,11 +58,13 @@ function Hero({ data }) {
             products.
           </p>
         </article>
-        <Image
-          fluid={fluid}
-          alt={title}
-          className="rounded-full lg:w-80 md:w-40  lg:h-80 md:h-40"
-        />
+        <section className="rounded-full lg:w-80 md:w-40  lg:h-80 md:h-40 shadow-4xl">
+          <Image
+            fluid={fluid}
+            alt={title}
+            className="rounded-full lg:w-80 md:w-40  lg:h-80 md:h-40"
+          />
+        </section>
       </div>
     </header>
   )
