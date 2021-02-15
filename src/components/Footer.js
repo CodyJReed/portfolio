@@ -1,4 +1,3 @@
-import { clearConfigCache } from "prettier"
 import React from "react"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import Something from "../assets/wave.svg"
