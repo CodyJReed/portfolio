@@ -34,7 +34,7 @@ function Projects({ data }) {
       >
         Projects
       </h1>
-      <section className="my-40 mx-2 flex md:flex-row-reverse flex-col-reverse items-center">
+      <section className="flex-col-reverse my-40 mx-2 flex md:flex-row-reverse  items-center">
         {nodes.map(node => (
           <Project
             title={node.title}
@@ -53,7 +53,7 @@ function Projects({ data }) {
 function Project(props) {
   const { title, fluid, description, url, viewable } = props
   return (
-    <div className="relative p-6 my-2 mx-auto border-2 border-solid border-gray-800 md:w-5/12 w-full rounded-xl shadow-2xl">
+    <div className="w-full relative p-6 my-2 mx-auto border-2 border-solid border-gray-800 md:w-5/12 rounded-xl shadow-2xl">
       {!viewable && (
         <div
           title="Coming soon..."

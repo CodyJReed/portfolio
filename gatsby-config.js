@@ -6,20 +6,13 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+
 module.exports = {
   /* Your site config here */
   plugins: [
-    "gatsby-plugin-postcss",
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        printRejected: false,
-        develop: false,
-        tailWind: true,
-      },
-    },
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-datocms`,
       options: {
@@ -34,6 +27,14 @@ module.exports = {
         rule: {
           include: /assets/, // Where the animated svgs are.
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
       },
     },
   ],

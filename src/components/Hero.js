@@ -62,7 +62,7 @@ function Hero({ data }) {
           <Image
             fluid={fluid}
             alt={title}
-            className="rounded-full lg:w-80 md:w-40  lg:h-80 md:h-40"
+            className="rounded-full lg:w-80 md:w-40 lg:h-80 md:h-40"
           />
         </section>
       </div>
