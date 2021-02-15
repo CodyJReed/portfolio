@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuToggled, setMenuToggled] = React.useState(false)
   return (
     <nav
-      className={`lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 mt-2 fixed -top-2 w-full z-10 shadow-sm`}
+      className={`lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 mt-2 fixed -top-2 w-full z-30 shadow-sm`}
     >
       <div className="flex-1 flex justify-between items-center">
         <Link to="/" className="flex items-center">
