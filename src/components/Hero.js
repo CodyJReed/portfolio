@@ -42,11 +42,11 @@ function Hero({ data }) {
               🍄
             </span>
           </h1>
-          <h3 className="my-2">
+          <h2 className="my-2">
             a <span className="font-semibold">Web Developer</span> and{" "}
             <span className="font-semibold">Digital Nomad</span> currently
             located in RNO
-          </h3>
+          </h2>
           <p>
             I specialize in Javascript, Responsive UI/UX Development, and APIs.
           </p>

@@ -81,7 +81,7 @@ function Project(props) {
           style={{ transition: "background-color .5s linear" }}
         >
           <a href={url} target="_blank" rel="noreferrer">
-            <BsFillCollectionPlayFill />
+            <BsFillCollectionPlayFill role="img" aria-label="Play Demo Icon" />
           </a>
         </button>
       )}

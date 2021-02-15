@@ -13,7 +13,11 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaLinkedin className="text-3xl" />
+          <FaLinkedin
+            className="text-3xl"
+            role="img"
+            aria-label="LinkedIn Icon"
+          />
         </a>
         <a
           className="cursor-pointer"
@@ -21,7 +25,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub className="text-3xl" />
+          <FaGithub className="text-3xl" role="img" aria-label="Github Icon" />
         </a>
       </p>
       <Something />
