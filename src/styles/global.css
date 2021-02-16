@@ -2,3 +2,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+  font-family: Abril Fatface;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.blog-content ul {
+  display: inline-block;
+}
+
+.blog-content ul li {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.blog-content blockquote {
+  padding: 1rem;
+  line-height: 2;
+  margin: 2rem 0;
+}
+
+.blog-content pre {
+  background: #222;
+  color: yellow;
+  overflow-x: visible;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+.blog-content a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+  font-weight: 600;
+}

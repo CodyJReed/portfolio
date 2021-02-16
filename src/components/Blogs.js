@@ -22,7 +22,7 @@ function Blogs({ blogs, title }) {
 
 function Blog({ id, title, image, date, category, slug, description }) {
   return (
-    <Link to={`/blog/${slug}`} key={id}>
+    <Link to={`/blogs/${slug}`} key={id}>
       <article className="max-w-4xl mx-auto p-6 my-2 border-2 border-solid border-gray-800 rounded-xl shadow-2xl">
         <Image
           fluid={image.fluid}
