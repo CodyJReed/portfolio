@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/SEO"
 
 export const query = graphql`
   {
@@ -60,6 +61,7 @@ export default function Home({ data }) {
   return (
     <div>
       <Layout>
+        <SEO title="Home" description="This is our home page" />
         <Hero />
         <Projects />
         <Blogs blogs={blogs} title="Blogs" />

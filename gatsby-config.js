@@ -8,8 +8,13 @@ require("dotenv").config({
 })
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "creed Portfolio",
+    description: "A portfolio site built with Gatsby, DatoCMS, and Netlify",
+    author: "@creed",
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
