@@ -17,28 +17,20 @@
 }
 
 .blog-content ul li {
-  padding: 0.5rem 1rem;
+  padding: 0 0.5rem;
   margin: 1rem 0;
   font-weight: 600;
 }
 
-.blog-content blockquote {
-  padding: 1rem;
+.blog-content p {
+  padding: 0.5rem;
   line-height: 2;
   margin: 2rem 0;
-}
-
-.blog-content pre {
-  background: #222;
-  color: yellow;
-  overflow-x: visible;
-  padding: 1rem 1.5rem;
-  border-radius: 4px;
 }
 
 .blog-content a {
   text-decoration: underline;
   cursor: pointer;
-  color: blue;
+  color: rgb(59, 59, 226);
   font-weight: 600;
 }
