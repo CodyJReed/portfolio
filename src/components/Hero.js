@@ -44,11 +44,11 @@ function Hero({ data }) {
           </h1>
           <h2 className="my-2">
             a <span className="font-semibold">Web Developer</span> and{" "}
-            <span className="font-semibold">Digital Nomad</span> currently
-            located in RNO
+            <span className="font-semibold">Homesteader</span> currently
+            located in Appalachia
           </h2>
           <p>
-            I specialize in Javascript, Responsive UI/UX Development, and APIs.
+            I specialize in Javascript, Responsive UI/UX Development, and APIs, and Homesteading.
           </p>
 
           <p className="my-4">
