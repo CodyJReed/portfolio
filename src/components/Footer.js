@@ -6,7 +6,7 @@ function Footer() {
   return (
     <section className="relative w-screen truncate">
       <p className="absolute z-20 text-white bottom-3 right-1/2 flex justify-center items-center">
-        &copy; 2021 Creed
+        &copy; 2025 Creed
         <a
           className="mx-2 cursor-pointer"
           href="https://www.linkedin.com/in/cody-reed-287511108/"
