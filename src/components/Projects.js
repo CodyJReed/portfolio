@@ -30,7 +30,7 @@ function Projects({ data }) {
     <>
       <h1
         style={{ fontFamily: "Abril Fatface" }}
-        className="animate-fadeIn text-center text-5xl underline"
+        className="animate-fadeIn text-center text-5xl underline text-gray-900 dark:text-white"
       >
         Projects
       </h1>
@@ -53,7 +53,7 @@ function Projects({ data }) {
 function Project(props) {
   const { title, fluid, description, url, viewable } = props
   return (
-    <div className="w-full relative p-6 my-2 mx-auto border-2 border-solid border-gray-800 md:w-5/12 rounded-xl shadow-2xl">
+    <div className="w-full relative p-6 my-2 mx-auto border-2 border-solid border-gray-800 dark:border-gray-600 md:w-5/12 rounded-lg shadow-2xl bg-white dark:bg-gray-800 transition-colors duration-300">
       {!viewable && (
         <div
           title="Coming soon..."
@@ -66,18 +66,18 @@ function Project(props) {
       )}
       <h2
         style={{ fontFamily: "Abril Fatface" }}
-        className={`text-xl ${title.includes("Trellis") && "flex"}`}
+        className={`text-xl text-gray-900 dark:text-white ${title.includes("Trellis") && "flex"}`}
       >
         {title} {title.includes("Trellis") && <BsLockFill />}
       </h2>
       <Image fluid={fluid} alt="PAGR Prescritpions" className="my-4 rounded" />
 
-      <p className="my-4">{description}</p>
+      <p className="my-4 text-gray-700 dark:text-gray-300">{description}</p>
       {url !== "" && (
         <button
           title="Play Demo"
           type="button"
-          className="px-4 py-2 bg-blue-300 border-2 border-solid border-gray-800 rounded cursor-pointer hover:bg-blue-400"
+          className="px-4 py-2 bg-blue-300 dark:bg-blue-600 border-2 border-solid border-gray-800 dark:border-gray-600 rounded cursor-pointer hover:bg-blue-400 dark:hover:bg-blue-700 text-gray-900 dark:text-white transition-colors duration-200"
           style={{ transition: "background-color .5s linear" }}
         >
           <a href={url} target="_blank" rel="noreferrer">

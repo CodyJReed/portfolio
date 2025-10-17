@@ -29,7 +29,8 @@ const tempLinks = data.map((link, index) => (
   <li key={index} className="text-center">
     <Link
       to={link.url}
-      className="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:hover:text-base lg:hover:border-indigo-400  hover:text-3xl"
+      // style={{ fontFamily: "Abril Fatface" }}
+      className="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:hover:text-base lg:hover:border-indigo-400  hover:text-3xl text-gray-900 dark:text-white font-semibold"
     >
       {link.text}
     </Link>

@@ -7,7 +7,7 @@ function Blogs({ blogs, title }) {
     <section>
       <h1
         style={{ fontFamily: "Abril Fatface" }}
-        className="animate-fadeIn text-center text-5xl underline"
+        className="animate-fadeIn text-center text-5xl underline text-gray-900 dark:text-white"
       >
         {title}
       </h1>
@@ -23,22 +23,22 @@ function Blogs({ blogs, title }) {
 function Blog({ id, title, image, date, category, slug, description }) {
   return (
     <Link to={`/blogs/${slug}`} key={id}>
-      <article className="max-w-4xl mx-auto p-6 my-2 border-2 border-solid border-gray-800 rounded-xl shadow-2xl">
+      <article className="max-w-4xl mx-auto p-6 my-2 border-2 border-solid border-gray-800 dark:border-gray-600 rounded-xl shadow-2xl bg-white dark:bg-gray-800 transition-colors duration-300">
         <Image
           fluid={image.fluid}
           alt="ingredients"
           className="my-4 rounded h-40 "
         />
-        <div className="grid grid-rows-1 bg-gray-100 p-4 rounded">
-          <h4 style={{ fontFamily: "Abril Fatface" }} className="text-xl my-2">
+        <div className="grid grid-rows-1 bg-gray-100 dark:bg-gray-700 p-4 rounded transition-colors duration-300">
+          <h4 style={{ fontFamily: "Abril Fatface" }} className="text-xl my-2 text-gray-900 dark:text-white">
             {title}
           </h4>
-          <p className="pb-4">{description}</p>
+          <p className="pb-4 text-gray-700 dark:text-gray-300">{description}</p>
           <div className="flex justify-between items-center">
-            <p className="font-bold text-gray-500 inline-block bg-gray-800 p-2 rounded uppercase text-md">
+            <p className="font-bold text-gray-500 dark:text-gray-400 inline-block bg-gray-800 dark:bg-gray-600 p-2 rounded uppercase text-md">
               {category}
             </p>
-            <p className="font-bold text-gray-500">{date}</p>
+            <p className="font-bold text-gray-500 dark:text-gray-400">{date}</p>
           </div>
         </div>
       </article>
