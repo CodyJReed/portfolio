@@ -39,7 +39,7 @@ function Hero({ data }) {
               aria-label="angel"
               className="relative text-sm right-7 bottom-6"
             >
-              🍄
+              &#128038;
             </span>
           </h1>
           <h2 className="my-2 text-gray-800 dark:text-gray-200">
