@@ -5,10 +5,10 @@ import Layout from "../components/Layout"
 export default function contact() {
   return (
     <Layout>
-      <div className="my-36" />
+      <div className="py-36 dark:bg-gray-900" />
       <h1
         style={{ fontFamily: "Abril Fatface" }}
-        className="animate-fadeIn text-center text-5xl underline mb-28"
+        className="animate-fadeIn text-center text-5xl underline mb-28 dark:text-white"
       >
         Contact
       </h1>
