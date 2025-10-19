@@ -4,8 +4,8 @@ import Something from "../assets/wave.svg"
 
 function Footer() {
   return (
-    <section className="relative w-screen truncate">
-      <p className="absolute z-20 text-white dark:text-gray-200 bottom-3 right-1/2 flex justify-center items-center transition-colors duration-300">
+    <section className="relative w-full overflow-hidden">
+      <p className="absolute z-20 text-white dark:text-gray-200 bottom-3 right-1/2 transform translate-x-1/2 flex justify-center items-center transition-colors duration-300">
         &copy; 2025 Creed
         <a
           className="mx-2 cursor-pointer hover:text-gray-300 dark:hover:text-gray-100 transition-colors duration-200"

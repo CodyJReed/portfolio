@@ -7,7 +7,7 @@ export default function projects() {
   return (
     <Layout>
       <SEO title="Projects" descritpion="creed projects" />
-      <div className="my-36" />
+      <div className="py-36 dark:bg-gray-900" />
       <Projects />
     </Layout>
   )
