@@ -1,0 +1,68 @@
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(var(--start-angle, 0deg)); }
+  to   { transform: translate(-50%, -50%) rotate(calc(360deg + var(--start-angle, 0deg))); }
+}
+
+@keyframes counterSpin {
+  from { transform: translateX(var(--orbit-distance)) rotate(0deg); }
+  to   { transform: translateX(var(--orbit-distance)) rotate(-360deg); }
+}
+
+.orbitWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: center;
+  will-change: transform;
+  animation: spin var(--orbit-duration, 10s) linear infinite;
+}
+
+.orbitIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+  will-change: transform;
+  animation: counterSpin var(--orbit-duration, 10s) linear infinite;
+}
+
+.iconInner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 1.5rem;
+  border-radius: 9999px;
+}
+
+/* Each icon spins around its own center */
+@keyframes iconSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Apply the spin animation to the inner icon element */
+.iconSpin {
+  animation: iconSpin 4s linear infinite;
+}
+
+.iconInner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 1.5rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.15); /* light halo */
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.iconInner:hover {
+  transform: scale(1.15);
+  background-color: rgba(255, 255, 255, 0.3);
+}
