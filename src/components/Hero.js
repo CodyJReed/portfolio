@@ -44,18 +44,15 @@ function Hero({ data }) {
           </h1>
           <h2 className="my-2 text-gray-800 dark:text-gray-200">
             a <span className="font-semibold">Web Developer</span> and{" "}
-            <span className="font-semibold">Homesteader</span> currently
-            located in Appalachia
+            <span className="font-semibold">Homesteader</span> based in Appalachia.
           </h2>
           <p className="text-gray-700 dark:text-gray-300">
-            I specialize in Javascript, Responsive UI/UX Development, and APIs, and Homesteading.
+            I specialize in <span className="font-semibold text-yellow-400">Typescript</span>, responsive UI/UX development, APIs-and living off the land.
           </p>
 
           <p className="my-4 text-gray-700 dark:text-gray-300">
-            I believe that <span className="font-semibold">Javascript</span>{" "}
-            solutions are the future of work, allowing teams to work faster, and
-            place their focus on design, accessibility, and execution of
-            products.
+            <span className="font-semibold text-red-500">Javascript</span>{" "}
+            plays a central role in shaping the future of commerce, enabling performant, accessibile, and engaging digital experiences.
           </p>
         </article>
         <section className="rounded-full lg:w-80 md:w-40 lg:h-80 md:h-40 shadow-4xl">
