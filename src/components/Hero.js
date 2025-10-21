@@ -1,7 +1,5 @@
 import React from "react"
 import "@fontsource/abril-fatface"
-import Image from "gatsby-image"
-// import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import OrbitingIcons from "./OrbitingIcons"
 
@@ -23,8 +21,7 @@ function Hero({ data }) {
   const {
     datoCmsHero: {
       image: { fluid },
-    },
-    title,
+    }
   } = useStaticQuery(query)
   return (
     <header
@@ -57,12 +54,7 @@ function Hero({ data }) {
           </p>
         </article>
         <section className="rounded-full lg:w-80 md:w-40 lg:h-80 md:h-40 shadow-4xl">
-          {/* <Image
-            fluid={fluid}
-            alt={title}
-            className="rounded-full lg:w-80 md:w-40 lg:h-80 md:h-40"
-          /> */}
-          <OrbitingIcons imageData={fluid} offset={10} duration={10}/>
+          <OrbitingIcons imageData={fluid} offset={12} duration={10}/>
         </section>
       </div>
     </header>
